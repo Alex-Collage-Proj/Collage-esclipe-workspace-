@@ -1,0 +1,23 @@
+package Ee;
+
+public class PrintEe {
+	
+	public static <E> void printArr(E[]inputArr)
+	{
+		for(E e:inputArr)
+		{
+			System.out.print(e);
+		}
+		System.out.println();
+	}
+	
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+	}
+
+}

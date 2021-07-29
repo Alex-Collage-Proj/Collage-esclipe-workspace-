@@ -1,0 +1,8 @@
+package Employees;
+
+public interface Comparable {
+
+	public  int ComapreTo(Object obj);
+	
+	
+}

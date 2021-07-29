@@ -1,0 +1,90 @@
+package Bank;
+
+//import jdk.internal.loader.Loader;
+
+public class AccountTest {
+
+	public static void main(String args[])
+	{
+		
+		
+		
+		// AccountCount=0;
+		Account ac1=new Account("Nani",1000);
+		 ac1.setBalance(ac1.withrawal(400));
+		Loan Lo1=new Loan("nani",1000,"2.4.2015","4");
+		System.out.println("     ");
+		
+		System.out.println("/////////////////     ////////////////////////////");
+		System.out.println("     ");
+		System.out.println("Loaned Amout:"+Lo1.getAcCount()+"\nLoaned Name:"+Lo1.getName()+"\nLoan  :"+Lo1.getAmoutL()+"\nwhen He Took:"+Lo1.getStartDate()+"\nTook For years:"+Lo1.getEndDate());
+		System.out.println("     ");
+		System.out.println("/////////////////     ////////////////////////////");
+		System.out.println("     ");
+		Account ac2=new Account("Nano",10000);
+		 	ac2.setBalance(ac2.addbalance(400));
+		
+		Account ac3=new Account("fufo",50000);
+		 ac3.setName("funny");
+		
+		Account ac4=new Account("fufi",2000);
+		
+		Account ac5=new Account("dogo",10000);
+		
+		
+		System.out.println("You Got :"+" "+ac5.getCount()+" Accounts");
+		
+		
+		System.out.println("the name is:"+ac1.getName()+"   Balance:"+ac1.getbalance());
+		System.out.println("the name is:"+ac2.getName()+"   Balance:"+ac2.getbalance());
+		System.out.println("the name is:"+ac3.getName()+"   Balance:"+ac3.getbalance());
+		System.out.println("the name is:"+ac4.getName()+"   Balance:"+ac4.getbalance());
+		System.out.println("the name is:"+ac5.getName()+"   Balance:"+ac5.getbalance());
+		
+		System.out.println("     ");
+		System.out.println("/////////////////     ////////////////////////////");
+		System.out.println("     ");
+		
+		
+		
+		 ac2.deposit(ac1 , ac2, 50);
+		 
+		
+		System.out.println("the name is:"+ac1.getName()+"   Balance"+ac1.getbalance());
+		System.out.println("the name is:"+ac2.getName()+"   Balance"+ac2.getbalance());
+		
+		
+		
+		System.out.println("     ");
+		System.out.println("/////////////////     ////////////////////////////");
+		System.out.println("     ");
+		
+	/*	Account[] ac=new Account[5];
+		
+		 ac[0]=new Account("ni",200);
+		
+		 ac[1]=new Account("no",4000);
+		
+		 ac[2]=new Account("fo",3000);
+		
+		 ac[3]=new Account("fu",2000);
+		
+		 ac[4]=new Account("dogi",5000);
+		 
+		 
+		 for(int i=0;i<ac.length;i++)
+		 {
+			 System.out.println("the name is:"+ac[i].getName()+"   Balance"+ac[i].getbalance());
+		 } */
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+
+}

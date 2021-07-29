@@ -1,0 +1,44 @@
+package Ee;
+
+public class PrintEe {
+	
+	public static <E> void printArr(E[]inputArr)
+	{
+		for(E e:inputArr)
+		{
+			System.out.print(e);
+		}
+		System.out.println();
+	}
+	
+	
+	public static <E> void Arr(E[]inputArr)
+	{
+		int count=0,a;
+		for(E e:inputArr)
+		{
+			count++;
+		}
+		a=count-1;
+		for(int i=count;i<0;i--)
+		{
+			if(count==count)
+		}
+		
+		return a;
+		
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Integer[] intArr= {1,2,3};
+		String[] stArr= {"a","b","c"};
+		printArr(intArr);
+		printArr(stArr);
+		
+		
+
+	}
+
+}

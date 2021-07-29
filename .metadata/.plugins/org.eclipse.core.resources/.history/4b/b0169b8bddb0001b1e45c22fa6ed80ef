@@ -1,0 +1,32 @@
+package Employees;
+
+public class SalariedEmployee extends Employee{
+	
+	
+
+
+	private double weeklySalary,weekly;
+	
+    
+	
+	public SalariedEmployee(String firstName, String lastName, String socialSecurityNumber,double weeklySalary) 
+	{
+		super(firstName, lastName, socialSecurityNumber);
+		this.weeklySalary=weeklySalary;
+		
+	}
+	
+	public double RetWeekly()
+	{
+		return weekly=weeklySalary*4;
+		
+	}
+	
+	public String toString()
+	{
+		return super.toString()+weeklySalary*4;
+	} 
+	
+
+
+}

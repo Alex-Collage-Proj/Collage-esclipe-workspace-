@@ -1,0 +1,88 @@
+package Bank;
+
+public class Account {
+	
+	
+	private String name;
+	private double balance=0;	
+	private static int AcCount=0;
+	
+	  
+		
+	public  Account(String name,double balance)
+		{
+			this.name=name;
+			this.setBalance(balance);
+			this.AcCount+=1;
+			
+		}
+		
+		public String getName()
+		{
+			return name;
+		}
+		
+		public double getbalance()
+		{
+			return getBalance();
+		}
+		
+		public int getCount()
+		{
+			return AcCount;
+		}
+		
+		
+		public double withrawal(double depositAmoun)
+		{
+			
+		 this.setBalance(this.getBalance() - depositAmoun);
+		 return getBalance();
+		}
+		
+		public double addbalance(double depositAmoun)
+		{
+			
+		 this.setBalance(this.getBalance() + depositAmoun);
+		 return getBalance();
+		}
+		
+		
+		public double getBalance() {
+			return balance;
+		}
+
+		public void setBalance(double balance) {
+			this.balance = balance;
+		}
+		
+		public void setName(String name)
+		{
+			this.name=name;
+		}
+		
+		public String getname()
+		{
+			return name;
+		}
+	
+		public int getCounter() 
+		{
+			return AcCount;
+		}
+
+		public void deposit(Account a1,Account a2,int deposit)
+		{
+			
+			//a1.setBalance(a1.balance - deposit);
+			a1.setBalance(this.getBalance()- deposit);
+			a2.setBalance(this.getBalance() + deposit);
+			
+		}
+		
+		
+		
+		
+		
+		
+}
